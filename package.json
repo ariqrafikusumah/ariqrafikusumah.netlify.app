@@ -10,13 +10,18 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@heroicons/react": "^2.0.13",
     "@livechat/widget-react": "^1.2.2",
+    "babel-plugin-macros": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-router-dom": "^6.6.1",
-    "react-scroll-up": "^1.4.0"
+    "react-scroll-up": "^1.4.0",
+    "react-type-animation": "^2.1.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
