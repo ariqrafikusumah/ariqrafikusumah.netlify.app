@@ -1,44 +1,49 @@
 import React from 'react'
+import Footer from '../components/Footer'
+import { ArrowSmallUpIcon, MapIcon, MapPinIcon, StarIcon } from "@heroicons/react/24/solid"
+import undrawProfile from "../../public/img/undraw-profile.svg"
+import ScrollToTop from 'react-scroll-up'
+import { LiveChatWidget } from '@livechat/widget-react'
 
 export default function Beranda() {
     return (
         <>
-            <div className='container mx-auto'>
-                <span className='font-extrabold'>Latest projext</span>
-                <div className='grid lg:grid-cols-2 md:grid-cols-1 gap-4'>
-                    <div className='body__ w-auto border border-gray-200 shadow-lg rounded-lg p-6 text-justify'>
-                        <div className='Header__ font-bold mb-5'>Learn HTML</div>
-                        <img className='mx-auto' src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png" alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsa illum cupiditate totam illo minima officiis quis assumenda. Aliquid architecto error sapiente iure, laboriosam explicabo saepe voluptatem nesciunt eligendi deleniti.
-                        <div className='Footer__ flex font-extralight'>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className='w-3'>
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
-                            </svg>
-                            
-                            &nbsp; Latest post
-                        </div>
-                    </div>
-                    <div className='body__ w-auto border border-gray-200 shadow-lg rounded-lg p-2.5'>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi et cumque tempore, at pariatur deserunt soluta impedit vitae rerum molestias odio cupiditate perferendis praesentium aspernatur laborum asperiores. Repudiandae, suscipit laborum!
-                    </div>
+            <ScrollToTop showUnder={160}>
+                <div className='border border-gray-200 shadow-lg bg-white rounded-lg'>
+                    <ArrowSmallUpIcon className='text-black w-10' />
                 </div>
-                <div className='grid lg:grid-cols-2 md:grid-cols-1 gap-4'>
-                    <div className='body__ w-auto border border-gray-200 shadow-lg rounded-lg p-6 text-justify'>
-                        <div className='Header__ font-extrabold'>Learn HTML</div>
-                        <img className='' src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png" alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsa illum cupiditate totam illo minima officiis quis assumenda. Aliquid architecto error sapiente iure, laboriosam explicabo saepe voluptatem nesciunt eligendi deleniti.
-                        <div className='Footer__ flex font-extralight'>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className='w-3'>
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
-                            </svg>
-                            &nbsp; latest post
+            </ScrollToTop>
+            <div className='h-screen container mx-auto items-center grid md:grid-cols-2 lg:px-52 md:px-32 sm:px-12'>
+                <div className='container mx-auto text-left font-bold text-4xl'>
+                    <span>Ariq Rafi Kusumah</span>
+                    <p className='flex font-extralight text-sm gap-1'><MapPinIcon className='w-3' /> Location, Indonesia <StarIcon className='w-3' /> Rating : 4,7/5</p>
+                    <p className=' font-thin text-xl'>i'm developer indonesian, frontend website</p>
+                </div>
+                <div className='container mx-auto xl:ml-52 lg:ml-32 md:ml-24 sm:'>
+                    <button className='sm:w-auto font-bold text-black hover:text-white hover:bg-gradient-to-r hover:from-blue-300 hover:to-blue-200 duration-500 bg-white p-3 rounded-full border-4 border-blue-300'>
+                        Baca Selengkapnya
+                    </button>
+                </div>
+            </div>
+            <div className='h-screen bg-gradient-to-r from-cyan-500 to-blue-500'>
+                <div className='container mx-auto'>
+                    <div className='conatiner mx-auto grid lg:grid-cols-2 md:grid-cols-1'>
+                        <div className=''>
+                            <div className='xl:px-32 xl:py-52 lg:px-12 lg:py-52 md:px-32 md:py-12 xs:py-12 xs:px-2'>
+                                <span className='font-bold text-6xl text-white'>Tentang</span>
+                                <p className='text-white mt-5 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellendus quos, officia ad molestias voluptatibus porro vel eveniet vero similique rem recusandae. Totam ipsa soluta quos repudiandae doloribus laboriosam ad.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className='body__ w-auto border border-gray-200 shadow-lg rounded-lg p-2.5'>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi et cumque tempore, at pariatur deserunt soluta impedit vitae rerum molestias odio cupiditate perferendis praesentium aspernatur laborum asperiores. Repudiandae, suscipit laborum!
+                        <div className=''>
+                            <div className='xl:py-52 xl:px-4 lg:px-12 lg:py-52 md:px-32 sm:px-32 sm:py-12 xs:py-12 xs:px-2'>
+                                <img className='w-92 h-92' src={undrawProfile} alt="" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <Footer />
         </>
     )
 }
