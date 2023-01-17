@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Beranda from './pages/Beranda'
 import DocsHTML from './pages/DocsHTML.jsx'
+import DocsHTMLNavbar from './pages/DocsHTMLNavbar'
 import NotFound from './pages/NotFound'
 import Produk from './pages/Produk'
 import Tentang from './pages/Tentang'
@@ -21,6 +22,8 @@ export default function App() {
           <Route path='/NotFound' element={<NotFound />} />
           <Route path='/WhatsappOrder' element={<WhatsappOrder />} />
           <Route path='/DocsHTML' element={<DocsHTML />} />
+          <Route path='/DocsHTMLNavbar' element={<DocsHTMLNavbar />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </Router>
     </>

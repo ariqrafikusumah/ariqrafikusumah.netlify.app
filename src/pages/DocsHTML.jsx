@@ -2,7 +2,7 @@ import React from 'react'
 import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dark, docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import Footer from '../components/Footer'
-
+import { Link } from 'react-router-dom';
 export default function DocsHTML() {
     const codeString =
         `<!DOCTYPE html>
@@ -44,8 +44,24 @@ export default function DocsHTML() {
                     <div className=' text-lg font-bold'>
                         Documentation - HTML
                     </div>
-
-                    <div className='text-4xl '>
+                    <div className='flex flex-wrap gap-5 '>
+                        <div className='block cursor-pointer font-bold text-white bg-blue-300 p-2.5 rounded-lg'>
+                            <Link to="/DocsHTMLNavbar"> Navbar</Link>
+                        </div>
+                        <div className='block font-bold text-white bg-blue-300 p-2.5 rounded-lg'>
+                            Form Input
+                        </div>
+                        <div className='block font-bold text-white bg-blue-300 p-2.5 rounded-lg'>
+                            Footer
+                        </div>
+                        <div className='block font-bold text-white bg-blue-300 p-2.5 rounded-lg'>
+                            Table
+                        </div>
+                        <div className='block font-bold text-white bg-blue-300 p-2.5 rounded-lg'>
+                            Button
+                        </div>
+                    </div>
+                    <div className='text-4xl mt-5'>
                         Apa itu HTML?
                     </div>
                     <div className='mt-5'>

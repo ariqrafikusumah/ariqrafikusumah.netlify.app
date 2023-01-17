@@ -68,7 +68,7 @@ export default function Beranda() {
                     </div>
                     <div className='Body___ w-auto'>
                         <img className='w-52 mx-auto' src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" alt="" />
-                        <p className='text-justify px-3 py-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ex, labore sit officiis ut ipsam consectetur eum quia explicabo cum ratione, magni nemo quae temporibus unde! Consequatur illo quis sit?</p>
+                        <p className='text-justify px-3 py-3'>Hypertext Markup Language adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets dan bahasa skrip lainnya seperti JavaScript, VBScript, dan PHP.</p>
                         <div className='px-3 mb-3'>
                             <Link to='/DocsHTML' className='border bg-blue-500 text-white border-blue-500 rounded-lg px-12 py-1'>
                                 Lihat

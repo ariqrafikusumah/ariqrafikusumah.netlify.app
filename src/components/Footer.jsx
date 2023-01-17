@@ -21,9 +21,9 @@ export default function Footer() {
             <div>
               <span className='font-bold'>PETA SITUS</span>
               <div className=' py-4'>
-                <div className=' py-3 font-mono cursor-pointer hover:text-gray-500'>- Beranda</div>
-                <div className=' py-3 font-mono cursor-pointer hover:text-gray-500'>- Tentang</div>
-                <div className=' py-3 font-mono cursor-pointer hover:text-gray-500'>- Produk</div>
+                <div className=' py-3 font-mono cursor-pointer hover:text-gray-500'><Link to='/'>- Beranda</Link></div>
+                <div className=' py-3 font-mono cursor-pointer hover:text-gray-500'><Link to='/NotFound'>- Tentang</Link></div>
+                <div className=' py-3 font-mono cursor-pointer hover:text-gray-500'><Link to='/Produk'>- Produk</Link></div>
               </div>
             </div>
             <div>
