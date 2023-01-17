@@ -58,21 +58,21 @@ export default function Beranda() {
             </div>
             <div className='container mx-auto text-3xl font-bold mt-5 mb-5'>
                 <div className='lg:ml-12'>
-                <h1 className=' font-mono'>Postingan Terbaru </h1>
+                    <h1 className=' font-mono'>Postingan Terbaru </h1>
                 </div>
             </div>
             <div className='container mx-auto grid  xl:grid-cols-4 lg:grid-cols-3 mt-5 gap-4 xl:px-12'>
                 <div className='w-full border border-gray-200 p-2.5 shadow-lg rounded-lg'>
                     <div className='Header__ w-auto font-semibold p-2.5'>
-                        Project
+                        Documentation - HTML
                     </div>
                     <div className='Body___ w-auto'>
-                        <img className='w-52 mx-auto' src="https://i.pinimg.com/564x/fc/66/fd/fc66fd8a2d3e4bc8c72f4cadb7bf3b62.jpg" alt="" />
+                        <img className='w-52 mx-auto' src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" alt="" />
                         <p className='text-justify px-3 py-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ex, labore sit officiis ut ipsam consectetur eum quia explicabo cum ratione, magni nemo quae temporibus unde! Consequatur illo quis sit?</p>
                         <div className='px-3 mb-3'>
-                            <a className='border bg-blue-500 text-white border-blue-500 rounded-lg px-12 py-1'>
+                            <Link to='/DocsHTML' className='border bg-blue-500 text-white border-blue-500 rounded-lg px-12 py-1'>
                                 Lihat
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className=' gap-2 Footer__ w-auto font-extralight italic text-sm'>
