@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
         <hr className=' border border-gray-200 shadow-lg' />
         <div className='mb-3 mt-3 lg:px-12'>
-          <p>&#169; 2022  Copyright <Link to="/">Ariq Rafi Kusumah</Link> </p>
+          <p className='flex'>&#169; 2022  Copyright <img className='w-6' src="https://media.tenor.com/CcUtdYsxSnwAAAAi/ep00000-emoji.gif" alt="" /> <Link to="/">&nbsp; Ariq Rafi Kusumah</Link> </p>
         </div>
       </div>
     </>

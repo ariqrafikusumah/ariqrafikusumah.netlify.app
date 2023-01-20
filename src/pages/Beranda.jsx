@@ -42,9 +42,9 @@ export default function Beranda() {
                                 <span className='font-bold text-6xl text-white'>Tentang</span>
                                 <p className='text-white mt-5 text-justify'>Hi Perkenalkan Nama Saya Ariq Rafi Kusumah, Saya adalah seorang developer front-end dari indonesia, saya ... </p>
                                 <div className='mt-5'>
-                                    <Link to='/NotFound' className='outline-double shadow-lg rounded-lg px-3 py-3 text-black font-mono bg-white hover:bg-blue-900 hover:text-white cursor-pointer duration-500'>
+                                    <a href='/Tentang' className='outline-double shadow-lg rounded-lg px-3 py-3 text-black font-mono bg-white hover:bg-blue-900 hover:text-white cursor-pointer duration-500'>
                                         Info selengkapnya
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@ export default function Beranda() {
                         <p className='flex gap-2 p-2.5'><EyeIcon className='w-3 text-gray-500' />Terbaru</p>
                     </div>
                 </div>
-                <div className='w-full border border-gray-200 p-2.5 shadow-lg rounded-lg'>
+                {/* <div className='w-full border border-gray-200 p-2.5 shadow-lg rounded-lg'>
                     <div className='Header__ w-auto font-semibold p-2.5'>
                         Project
                     </div>
@@ -129,7 +129,7 @@ export default function Beranda() {
                     <div className=' gap-2 Footer__ w-auto font-extralight italic text-sm'>
                         <p className='flex gap-2 p-2.5'><EyeIcon className='w-3 text-gray-500' />Terbaru</p>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <Footer />

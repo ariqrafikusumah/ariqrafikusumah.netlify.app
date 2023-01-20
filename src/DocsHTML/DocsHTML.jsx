@@ -1,6 +1,6 @@
 import React from 'react'
 import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { dark, docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { dark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom';
 export default function DocsHTML() {
@@ -40,12 +40,12 @@ export default function DocsHTML() {
     return (
         <>
             <div className='container mx-auto mt-5'>
-                <div className='lg:px-2'>
+                <div className='lg:px-52'>
                     <div className=' text-lg font-bold'>
                         Documentation - HTML
                     </div>
                     <div className='flex flex-wrap gap-5 '>
-                        <div className='block cursor-pointer font-bold text-white bg-blue-300 p-2.5 rounded-lg'>
+                        <div className='block cursor-pointer font-bold text-white bg-blue-300 p-2.5 rounded-lg bg-gradient-to-r form-blue-400 hover:bg-blue-400'>
                             <Link to="/DocsHTMLNavbar"> Navbar</Link>
                         </div>
                         <div className='block font-bold text-white bg-blue-300 p-2.5 rounded-lg'>
@@ -94,12 +94,16 @@ export default function DocsHTML() {
                     <div className='text-3xl mt-5 mb-5'>Gambar HTML</div>
                     <div>Gambar HTML ditentukan dengan img tag.</div>
                     <div>
-                        File sumber ( src ), teks alternatif ( alt ), width, dan height disediakan sebagai atribut:
+                        File sumber ( <span className='text-red-500'>
+                            src</span> ), teks alternatif ( <span className='text-red-500'>alt</span> ), width, dan height disediakan sebagai atribut:
                     </div>
                     <SyntaxHighlighter language='html' style={dark}>
                         {codeGambar}
                     </SyntaxHighlighter>
                     <div className='text-3xl mt-5 mb-5'>Tautan HTML</div>
+                    <div>Tujuan tautan ditentukan dalam <span className='text-red-500'> href</span> atribut.
+                        Atribut digunakan untuk memberikan informasi tambahan tentang elemen HTML.
+                        Anda akan belajar lebih banyak tentang atribut di bab selanjutnya</div>
                     <SyntaxHighlighter language='html' style={dark}>
                         {codeTautan}
                     </SyntaxHighlighter>
