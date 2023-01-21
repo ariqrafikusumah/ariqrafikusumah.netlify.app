@@ -34,7 +34,7 @@ export default function Tentang() {
               <img className='w-32' src="https://rekreartive.com/wp-content/uploads/2019/04/Logo-SMA-PNG-Terbaru-Warna.png" alt="" />
               <div className='font-bold lg:w-96'>SMA Negeri 1 Cikarang Barat
                 <div className='font-thin'>IPA</div>
-                <div className='text-sm text-gray-500 '>Tahun 2015</div>
+                <div className='text-sm text-gray-500 '>Tahun 2018</div>
               </div>
             </div>
           </div>
